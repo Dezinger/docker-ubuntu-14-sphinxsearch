@@ -20,3 +20,5 @@ RUN \
 # clean
     apt-get -y autoremove && apt-get -y clean && apt-get autoclean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
+EXPOSE 9312 9306
