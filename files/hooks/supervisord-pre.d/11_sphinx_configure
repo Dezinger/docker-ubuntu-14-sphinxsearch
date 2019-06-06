@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+echo "Configure sphinx.conf"
+
+sed -i \
+    -e "s/DB1_NAME/$DB1_NAME/g" \
+    -e "s/DB1_HOST/$DB1_HOST/g" \
+    -e "s/DB1_PORT/$DB1_PORT/g" \
+    -e "s/DB1_USER/$DB1_USER/g" \
+    -e "s/DB1_PASSWORD/$DB1_PASSWORD/g" \
+    -e "s/DB2_NAME/$DB2_NAME/g" \
+    -e "s/DB2_HOST/$DB2_HOST/g" \
+    -e "s/DB2_PORT/$DB2_PORT/g" \
+    -e "s/DB2_USER/$DB2_USER/g" \
+    -e "s/DB2_PASSWORD/$DB3_PASSWORD/g" \
+    -e "s/DB3_NAME/$DB3_NAME/g" \
+    -e "s/DB3_HOST/$DB3_HOST/g" \
+    -e "s/DB3_PORT/$DB3_PORT/g" \
+    -e "s/DB3_USER/$DB3_USER/g" \
+    -e "s/DB3_PASSWORD/$DB3_PASSWORD/g" \
+    /etc/sphinxsearch/sphinx.conf
